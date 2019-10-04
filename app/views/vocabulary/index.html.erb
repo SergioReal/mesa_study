@@ -1,0 +1,27 @@
+<div class="main vocabulary-index">
+  <ul class="searchbox">
+  <li class="item"> <%= search_form_for @q, url: "/vocabulary/index" do |f| %></li>
+      <li class="item"><%= f.search_field :word_cont ,placeholder: 'Type a Word' %></li>
+      <li><%= f.submit ("Search") , class: 'search-btn'%></li>
+  <% end %>
+  </ul>
+ <div class="container_post">
+
+
+<% @datas.each do |data| %>
+<div class="vocab-index-word">
+<%= link_to(data.word,"/vocabulary/#{data.id}",{method: "get"})  %>
+</div>
+<div class="vocab-index-meaning">
+<%= data.meaning %>
+</div>
+  <div class="vocab-index-erase">
+<%= link_to("/vocabulary/#{data.id}/destroy", method: :delete, data: { confirm: 'Are you sure?' }) do %>
+<span class="fa fa-trash"> </span>
+</div>
+<% end %>
+<% end %>
+
+
+</div>
+</div>

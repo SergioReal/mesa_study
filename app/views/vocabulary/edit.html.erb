@@ -1,0 +1,15 @@
+<div class="main posts-new">
+  <div class="container_edit">
+    <div class="form-heading">Edit a Word </div>
+    <%= form_tag("/vocabulary/#{@vocabulary.id}/update") do %>
+    <div class="form">
+     <div class="form-body">
+       <textarea name="word"> <%= @vocabulary.word %> </textarea>
+       <textarea name="meaning"><%=@vocabulary.meaning%></textarea>
+    <input type="submit" value="Save">
+
+<%end%>
+</div>
+</div>
+</div>
+</div>

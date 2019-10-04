@@ -1,0 +1,242 @@
+// Place all the styles related to the vocabulary controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+///////  INDEX  /////////
+.container_post {
+  width: 950px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+
+}
+
+.vocab-index-word {
+  width: 30%;
+  height: 65px;
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  float: left;
+  text-align: center;
+}
+.vocab-index-word a {
+  color: black;
+}
+
+.vocab-index-meaning {
+  width: 60%;
+  height: 65px;
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  float: left;
+}
+
+.vocab-index-erase{
+  padding-top: 19px;
+  height: 65px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  width: 30px;
+  text-align: center;
+}
+
+.vocab-index-erase:hover{
+  background-color: transparent;
+  box-shadow: 0 2px 6px #white;
+  cursor: pointer;
+}
+
+.vocab-index-erase:hover a {
+  color: white;
+  cursor: pointer;
+}
+
+.vocab-index-erase a{
+  color: black;
+  }
+
+
+
+
+.main {
+position: absolute;
+width: 100%;
+min-height: 100%;
+background-color: #f5f8fa;
+background-image: url(https://i.ibb.co/Q88Cj1K/beverage-caffeine-coffee-606542-2.jpg);
+background-size: cover;
+padding-top: 20px;
+background-position:47% 53%;
+}
+
+.searchbox {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  margin-top: 50px;
+  z-index: 6;
+  opacity: 0.93;
+  margin-right: 10px;
+  float: left;
+}
+
+.item {
+  margin-bottom: 3px;
+    opacity: 0.7;
+}
+.item:hover {
+  opacity: 1;
+}
+
+.search-btn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background:rgba(34, 49, 52, 0.9);
+ margin-top: 5px;
+  border-radius: 5px;
+  width: 80px;
+ cursor: pointer;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.search-btn:hover{
+  opacity: 1;
+}
+
+/////////////// ADD /////////////
+.container_add {
+  max-width: 600px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+.form-heading {
+  font-weight: 300;
+  margin: 60px 0 20px;
+  font-size: 48px;
+  color: rgba(34, 49, 52, 0.9);
+  text-shadow: 2px 1px #c1ced7;
+  font-weight: 700;
+    border-left: 4px solid white;
+}
+
+.form-body {
+  padding: 30px;
+}
+
+
+.form input {
+  width: 100%;
+  border: 1px solid #d8dadf;
+  padding: 10px;
+  color: #57575f;
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 2px;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 110px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.form input[type="submit"] {
+  background-color: #3ecdc6;
+  color: white;
+  cursor: pointer;
+  font-weight: 300;
+  width: 120px;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  float: right;
+}
+
+.form-body:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+///////// SHOW //////////////
+
+.container_show {
+  max-width: 850px;
+  margin: 80px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}
+
+.vocab-show-word {
+  padding: 40px 60px;
+  text-align: justify;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 1px 1px #9595b7;
+}
+
+.vocab-show-meaning {
+  padding: 10px 60px;
+  text-indent: 35px;
+}
+.vocabulary-show-item {
+  // padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  height: 100%;
+}
+
+.post-menus {
+  display: block;
+  padding-top: 0px;
+  max-width: 850px;
+  margin-top: 80px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clear: both;
+  background-color: rgba(34, 49, 52, 0.9);
+  text-align: right;
+}
+
+.post-menus a {
+  color: white;
+  padding-left: 25px;
+}
+
+.post-menus a:hover {
+opacity: 0.6;
+}
+
+////// EDIT /////////
+.container_edit {
+  max-width: 600px;
+  margin: 60px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  clear: both;
+}

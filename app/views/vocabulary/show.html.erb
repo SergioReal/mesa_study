@@ -1,0 +1,21 @@
+<div class="main vocabulary-show">
+  <div class="container_show">
+    <div class="vocabulary-show-item">
+      <div class="vocab-show-word">
+      <%= @vocabulary.word %>
+      </div>
+      <div class="vocab-show-meaning">
+      <%= @vocabulary.meaning %>
+      </div>
+
+
+
+<div class="post-menus">
+<%= link_to("Edit", "/vocabulary/#{@vocabulary.id}/edit") %>
+<%= link_to("/vocabulary/#{@vocabulary.id}/destroy", method: :delete, data: { confirm: 'Are you sure?' }) do %>
+<span class="fa fa-trash"> </span>
+</div>
+</div>
+</div>
+</div>
+<% end %>

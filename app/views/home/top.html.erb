@@ -1,0 +1,16 @@
+    <div class="top-wrapper">
+      <div class="container_top">
+        <h1>STUDY ANYWHERE.</h1>
+        <h1>REVIEW ANYWHERE.</h1>
+        <% if @current_user %>
+
+        <p>Welcome back to your private cafe space, <%= @current_user.user_name %></p>
+
+        <%else%>
+
+        <p>MESA is your own private cafe space</p>
+
+        <%end%>
+
+      </div>
+    </div>

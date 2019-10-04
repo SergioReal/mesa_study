@@ -1,0 +1,17 @@
+<div class="overall">
+  <div class="container_add">
+    <div class="form-heading">Add a New Word</div>
+    <div class="form">
+      <div class="form-body">
+
+        <%= form_tag("/vocabulary/add") do %>
+          <p>Word</p>
+          <input name="word" value="<%= @new_vocab.word %>">
+          <p>Meaning</p>
+          <input name="meaning" value="<%= @new_vocab.meaning  %>">
+          <input type="submit" value="Add">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
